@@ -35,6 +35,8 @@ MVP设计模式中，M层提供数据，V层做界面展示，而P层则成为M�
 
 - 注解@Provides：该容器创建对象的动作。
 
+---
+
 - 注解@Inject:从容器中取出这个对象的动作。
 
 - 注解@Qualifier：用来给@Inject和@Provides贴上关联标签(进行注解)。如果一个对象可以由一个或多个容器的@Provides修饰提供，这时候就需要用Qualifier进行标签关联。 [还不清楚的可点击了解.](https://www.jianshu.com/p/e521bd239cd9)
@@ -173,13 +175,13 @@ protected void onCreate(@Nullable Bundle savedInstanceState) {
 
 ---
 
-## 何为Dagger2-android
+## 何为Dagger2-Android
 
 > Dagger2-Android是Google基于Dagger2开发的应用于Android开发的扩展库。通过它，我们能够通过简单的配置，无需书写过多的Component就可以轻松地实现Android的依赖注入。可以说是Android实现依赖注入的一大法宝。
 
 ---
 
-## 如何使用Dagger2-android进行全局依赖配置
+## 如何使用Dagger2-Android
 
 1.我们先声明我们的Application类，并实现HasActivityInjector接口，然后添加到manifest清单文件中：
 
@@ -244,9 +246,11 @@ public interface ActivitySubComponent extends AndroidInjector<BaseActivity> {
 
 $~~~~$在实际使用Dagger2过程中，我们不可能书写过多的Component，那样可读性和可维护性都会大大降低，@Subcomponent主要解决的是就是Component复用的问题。
 
+---
 
 $~~~~$Subcomponent就好比将多个统一(类似)的依赖注入Component接口打包到一个Module(暂记为AllModule)中，而这些Subcomponent又可以放入多个Module。
 
+---
 
 $~~~~$这样在外层我们只需要定义一个全局的父Component，而在这个父Component中，我们放入了装载了多个Subcomponent的AllModule。这样如果我们需要新添加依赖的话，只需要在AllModule中进行Module注册即可，无需添加新的Component，而且也方便管理。
 
