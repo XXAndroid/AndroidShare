@@ -4,7 +4,9 @@
 
 ## 何为 Google Architecture Components
 
-   Google Architecture Components是Google在I/O大会上发布的一套应用框架库，它的使用基础是DataBinding和MVVM框架。详细介绍可参见：http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/1107/8715.html
+   Google Architecture Components是Google在I/O大会上发布的一套应用框架库，它的使用基础是DataBinding和MVVM框架。
+   
+   详细介绍[请点击查看](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/1107/8715.html)
 
 ---
 
