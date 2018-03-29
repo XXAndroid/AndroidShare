@@ -223,7 +223,7 @@ public class DateConverter {
 
 ---
 
-Room数据库的其他操作详解，可参见：http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0726/8249.html
+Room数据库的其他操作详解，[请点击查看](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0726/8249.html)
 
 ---
 
