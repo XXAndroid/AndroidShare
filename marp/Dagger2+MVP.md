@@ -1,5 +1,7 @@
 ## Dagger2 + MVP
 
+---
+
 ## 何为Dagger2
 
 >Dagger2是Google提供的依赖注入框架，依赖注入为Android中组件之间的解耦提供了很好的解决方案。
